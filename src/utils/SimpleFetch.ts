@@ -15,18 +15,22 @@ export class SimpleFetch {
 	}
 
 	async get(url?: string) {
+		// Вместо этого мб можно применить каррирование
 		return await this.request("GET", url);
 	}
 
 	async put(url?: string, data: Record<string, unknown> = {}) {
+		// Вместо этого мб можно применить каррирование
 		return await this.request("PUT", url, data);
 	}
 
 	async post(url?: string, data: Record<string, unknown> = {}) {
+		// Вместо этого мб можно применить каррирование
 		return await this.request("POST", url, data);
 	}
 
 	async patch(url?: string, data: Record<string, unknown> = {}) {
+		// Вместо этого мб можно применить каррирование
 		return await this.request("PATCH", url, data);
 	}
 
